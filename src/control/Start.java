@@ -9,12 +9,10 @@ public class Start {
 	public static void main(String[] args) throws DaoException {
 		UtilisateurDao utilisateurDao = DaoFactory.getInstance().getUtilisateurDao();
 		
-		//System.out.println(utilisateurDao.recupererUtilisateur(1));
+		utilisateurDao.ajouterUtilisateur("AMMAR", "Imen", "imenammar25@gmail.com");
 		
-		utilisateurDao.ajouterUtilisateur("BECHIKH", "Mohamed Chahir", "mm@gggg.c");
+		System.out.println(utilisateurDao.recupererUtilisateur(1));
 		
 		System.out.println(utilisateurDao.recupererUtilisateurs());
-
 	}
-
 }
